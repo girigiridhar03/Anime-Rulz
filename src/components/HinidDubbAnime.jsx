@@ -12,35 +12,35 @@ import 'swiper/css/pagination';
 import { FreeMode } from 'swiper/modules';
 
 
-const TeluguDubbAnime = () =>{
+const HindiDubbAnime = () =>{
 
     const Posters = [
         {
-            animePoster : 'https://animerulz.pro/images/Naruto-img.jpg',
-            title:'Naruto',
-            generes:["Hindi","Telugu","Bengali","Malayalam"]
-        },
-        {
-            animePoster : 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-m1gX3iwfIsLu.png',
-            title:'Solo Leveling',
+            animePoster : 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-oNJZtLWdXtvy.jpg',
+            title:'Jujutsu kaisen Season 2',
             generes:["Hindi","Telugu","Tamil"]
         },
         {
-            animePoster : 'https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX380_CR0,4,380,562_.jpg',
-            title:'Jujutsu Kaisen',
+            animePoster : 'https://img.flawlessfiles.com/_r/300x400/100/3e/13/3e13d0ab2ce8799c9da8ed59548b96e9/3e13d0ab2ce8799c9da8ed59548b96e9.jpg',
+            title:'Demon Slayer...',
             generes:["Hindi","Telugu","Tamil"]
         },
         {
-            animePoster : 'https://img.flawlessfiles.com/_r/300x400/100/f6/f0/f6f0a1657b0f119bb850fe3b1bbf81b5/f6f0a1657b0f119bb850fe3b1bbf81b5.jpg',
-            title:'That Time I Got Reincarnate...',
-            generes:["Telugu","Tamil"]
+            animePoster : 'https://img.flawlessfiles.com/_r/300x400/100/53/d2/53d283223e562b22a14023d8dc1e934d/53d283223e562b22a14023d8dc1e934d.jpg',
+            title:'Spy X Family Season 2',
+            generes:["Hindi","Telugu","Tamil"]
+        },
+        {
+            animePoster : 'https://cdn.noitatnemucod.net/thumbnail/300x400/100/5e766fbd23e796462040a67203345a7b.jpg',
+            title:'Frieren:Beyond Journeys End',
+            generes:["Hindi"]
         },
     ]
 
      return (
         <div className='mt-10'>
         <h2 className="text-[#FAA300] py-4 px-5 xl:px-12
-         font-bold flex items-center gap-2 text-xl md:text-3xl">Telugu Dubbed Animes</h2>
+         font-bold flex items-center gap-2 text-xl md:text-3xl">Hindi Dubbed Animes</h2>
 
         <div className='image-slider hidden lg:block'> 
         <Swiper
@@ -151,4 +151,4 @@ const TeluguDubbAnime = () =>{
 };
 
 
-export default TeluguDubbAnime;
+export default HindiDubbAnime;

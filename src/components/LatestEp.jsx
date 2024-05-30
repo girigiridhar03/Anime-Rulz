@@ -1,7 +1,6 @@
 import './CSS/Slider.css';
 
 
-import { FaFireAlt } from "react-icons/fa";
 import { MdNotStarted } from "react-icons/md";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,70 +15,70 @@ import 'swiper/css/pagination';
 import { FreeMode } from 'swiper/modules';
 
 
-const TrendingAnime = () =>{
+const LastestEp = () =>{
 
-    const TrendingAnimeImg = [
+    const LastestEp = [
         {
-            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/edfc7fe935b6eac2d704cf5b0a60e356.jpg",
-            nextEp:"Next Episode-8 in 3d 2h",
+            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/edf74a5bdd04e0764cb71390f83857ad.jpg",
+            nextEp:"Next Episode-9 in 3d 2h",
             tv: "T.V",
-            ep:"7 episode",
-            title:"Kaiju No.8",
-            genres:["Action","Adventure","Sci-Fi"],
-            watchNow : "Watch Now"
-        },
-        {
-            animeimg:"https://s.yimg.com/ny/api/res/1.2/kwgFlI04miUYlOnDKTuZNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTEzNTk7Y2Y9d2VicA--/https://media.zenfs.com/en/parade_250/7a3b14711f20dca472b3ee99a37b5e21",
-            nextEp:"Next Episode-1107 in 3d 2h",
-            tv: "T.V",
-            ep:"1106 episode",
-            title:"ONE PIECE",
+            ep:"8 episode",
+            title:"Viral Hit",
             genres:["Action","Adventure","Comedy"],
             watchNow : "Watch Now"
         },
         {
-            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/1f06eb0baf5520aa639b546fc189400d.jpg",
-            nextEp:"Next Episode-4 in 3d 2h",
+            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/3575eb0dcb2cddf901d19bc62aef9ac8.jpg",
+            nextEp:"Next Episode-10 in 3d 2h",
             tv: "T.V",
-            ep:"3 episode",
-            title:"Demonslayer:Kimetsu no Yaiba Hasira...",
+            ep:"9 episode",
+            title:"BARTENDER GLASS of God",
+            genres:["Action","Adventure","Comedy"],
+            watchNow : "Watch Now"
+        },
+        {
+            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/c534bc3db886ec705a2e17fe8e8d0069.jpg",
+            nextEp:"Next Episode-9 in 3d 2h",
+            tv: "T.V",
+            ep:"8 episode",
+            title:"KONOSUBA-God's Blessing on This WonderFul..",
             genres:["Action","Adventure","Drama"],
             watchNow : "Watch Now"
         },
         {
-            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/af4938d7388aad3438e443e74b02531e.jpg",
-            nextEp:"Next Episode-5 in 3d 2h",
+            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/987156345df524528ff0001d350c407e.jpg",
+            nextEp:"Next Episode-59 in 3d 2h",
             tv: "T.V",
-            ep:"4 episode",
-            title:"My Hero Academia Season 7",
-            genres:["Action","Adventure","Sci-Fi"],
+            ep:"8 episode",
+            title:"Date a Live V",
+            genres:["Action","Comedy","Sci-Fi"],
             watchNow : "Watch Now"
         },
         {
-            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/d9bb23228e5a641b5a3e9386382dae3a.jpg",
+            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/7cf93a1492ba1cb5d8c76af676267a18.jpg",
             nextEp:"Next Episode-9 in 3d 2h",
             tv: "T.V",
             ep:"8 episode",
-            title:"WIND BREAKER",
-            genres:["Action","Comedy","Drama"],
+            title:"Mysterious Disappearances",
+            genres:["Action","Mystery","Romance"],
             watchNow : "Watch Now"
         },
         {
-            animeimg:"https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-m1gX3iwfIsLu.png",
-            nextEp:"Next Episode-8 in 3d 2h",
+            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/a165e967ca566b006c06422df6f99b1f.jpg",
+            nextEp:"Next Episode-9 in 3d 2h",
+            tv: "T.V",
+            ep:"8 episode",
+            title:"The Many Sides of Voice Actor Radio",
+            genres:["Comedy","Drama","Sci-Fi"],
+            watchNow : "Watch Now"
+        },
+        {
+            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/bd6bb9ae992618b22c01b1f51e180198.jpg",
+            nextEp:"Next Episode-12 in 3d 2h",
             tv: "T.V",
             ep:"12 episode",
-            title:"Solo Leveling",
-            genres:["Action","Adventure","Fantasy"],
-            watchNow : "Watch Now"
-        },
-        {
-            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/a7ab15fb2281cce25179cd739112f426.jpg",
-            nextEp:"Next Episode-8 in 3d 2h",
-            tv: "T.V",
-            ep:"9 episode",
-            title:"Re:Monster",
-            genres:["Action","Adventure","Fantasy"],
+            title:"I'm Quitting Heroing",
+            genres:["Action","Adventure","Comedy"],
             watchNow : "Watch Now"
         },
         {
@@ -92,12 +91,12 @@ const TrendingAnime = () =>{
             watchNow : "Watch Now"
         },
         {
-            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/edfc7fe935b6eac2d704cf5b0a60e356.jpg",
-            nextEp:"Next Episode-8 in 3d 2h",
+            animeimg:"https://cdn.noitatnemucod.net/thumbnail/300x400/100/4bce0354a0a8564007fd97bc7ef41bc8.jpg",
+            nextEp:"Next Episode-12 in 3d 2h",
             tv: "T.V",
-            ep:"7 episode",
-            title:"Kaiju No.8",
-            genres:["Action","Adventure","Sci-Fi"],
+            ep:"11 episode",
+            title:"The Most Heretical Last Boss Queen...",
+            genres:["Action","Adventure","Romance"],
             watchNow : "Watch Now"
         },
         {
@@ -114,7 +113,7 @@ const TrendingAnime = () =>{
     const mouseHover = (e) =>{
         e.preventDefault();
         let bodyImg = e.target.style.backgroundImage.split(" ");
- 
+        console.log(bodyImg)
         let bgBody =  document.body;
          bgBody.style.background = bodyImg;
          bgBody.style.backgroundRepeat = "no-repeat";
@@ -140,7 +139,7 @@ const TrendingAnime = () =>{
      return(
         <>
           <h2 className="text-[#FAA300] py-4 px-5 xl:px-12
-           font-bold flex items-center gap-2 text-xl md:text-3xl mt-6">Trending Anime <span><FaFireAlt /></span></h2>
+           font-bold flex items-center gap-2 text-xl md:text-3xl mt-6">Latest Epoisde</h2>
 
           {/* Images div */}
           {/* large laptop */}
@@ -158,9 +157,9 @@ const TrendingAnime = () =>{
         style={{height:"30vh"}}
       >
         
-        {TrendingAnimeImg.map(item=>{
+        {LastestEp.map(item=>{
             return <>
-            <SwiperSlide key={item.animeimg} className='relative ' onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+            <SwiperSlide className='relative ' onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
             <div className='anime-content'>
                 <h4 className='border-b-[1px] border-b-black text-md font-semibold pb-2'>{item.nextEp}</h4>
                 <div className='flex  gap-2 items-center'>
@@ -170,7 +169,7 @@ const TrendingAnime = () =>{
                 </div>
                 <h3 className=' text-lg font-bold'>{item.title}</h3>
                 <div className='flex mt-2  gap-2 border-b-[1px] border-b-black pb-1'>
-                  {item.genres.map(elem=><p key={elem}>{elem}</p>)}
+                  {item.genres.map(elem=><p>{elem}</p>)}
                 </div>
 
                 <div className='inline-block mt-auto mx-auto'>
@@ -199,9 +198,9 @@ const TrendingAnime = () =>{
         style={{height:"30vh"}}
       >
         
-        {TrendingAnimeImg.map(item=>{
+        {LastestEp.map(item=>{
             return <>
-            <SwiperSlide key={item.animeimg} onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+            <SwiperSlide onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
             <div className='anime-content' style={{gap:"10px"}}>
                 <h4 className='border-b-[1px] border-b-black text-sm font-bold pb-2'>{item.nextEp}</h4>
                 <div className='flex  gap-2 text-sm items-center'>
@@ -211,7 +210,7 @@ const TrendingAnime = () =>{
                 </div>
                 <h3 className=' text-md font-bold'>{item.title}</h3>
                 <div className='flex mt-1 text-sm gap-2 border-b-[1px] border-b-black pb-1'>
-                  {item.genres.map(elem=><p key={elem}>{elem}</p>)}
+                  {item.genres.map(elem=><p>{elem}</p>)}
                 </div>
 
                 <div className='inline-block mt-auto mx-auto'>
@@ -240,9 +239,9 @@ const TrendingAnime = () =>{
         style={{height:"30vh"}}
       >
         
-        {TrendingAnimeImg.map(item=>{
+        {LastestEp.map(item=>{
           return <>
-           <SwiperSlide key={item.animeimg} className='relative' onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+           <SwiperSlide className='relative' onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
            <div className='anime-content'>
                 <h4 className='border-b-[1px] border-b-black text-md font-semibold pb-2'>{item.nextEp}</h4>
                 <div className='flex  gap-2 items-center'>
@@ -252,7 +251,7 @@ const TrendingAnime = () =>{
                 </div>
                 <h3 className=' text-lg font-bold'>{item.title}</h3>
                 <div className='flex mt-2 gap-2 border-b-[1px] border-b-black pb-1'>
-                  {item.genres.map(elem=><p key={elem}>{elem}</p>)}
+                  {item.genres.map(elem=><p>{elem}</p>)}
                 </div>
 
                 <div className='inline-block mt-auto mx-auto'>
@@ -271,7 +270,7 @@ const TrendingAnime = () =>{
 
           <Swiper
         slidesPerView={3}
-        spaceBetween={20}
+        spaceBetween={10}
         freeMode={true}
         pagination={{
           clickable: true,
@@ -281,9 +280,9 @@ const TrendingAnime = () =>{
         style={{height:"25vh"}}
       >
         
-        {TrendingAnimeImg.map(item=>{
+        {LastestEp.map(item=>{
             return  <>
-            <SwiperSlide key={item.animeimg} className='backgroudImages relative' style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+            <SwiperSlide className='backgroudImages relative' style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
              
             </SwiperSlide>
             
@@ -296,4 +295,4 @@ const TrendingAnime = () =>{
 }
 
 
-export default TrendingAnime
+export default LastestEp

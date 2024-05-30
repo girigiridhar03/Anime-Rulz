@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 const Navbar = () =>{
      return (
         // Navbar Container
-        <div className="w-full  py-4 px-5 flex items-center justify-between bg-[#00000096] ">
+        <div className="w-full  py-4 px-5 flex items-center justify-between bg-[#00000096] absolute top-0 left-0 z-10">
            
            {/* Icons and heading */}
             <div className="text-white text-2xl flex items-center gap-3 cursor-pointer">

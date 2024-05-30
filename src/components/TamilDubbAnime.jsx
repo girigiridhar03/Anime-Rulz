@@ -12,35 +12,35 @@ import 'swiper/css/pagination';
 import { FreeMode } from 'swiper/modules';
 
 
-const TeluguDubbAnime = () =>{
+const TamilDubbAnime = () =>{
 
     const Posters = [
         {
-            animePoster : 'https://animerulz.pro/images/Naruto-img.jpg',
-            title:'Naruto',
-            generes:["Hindi","Telugu","Bengali","Malayalam"]
+            animePoster : 'https://img.flawlessfiles.com/_r/300x400/100/26/f1/26f103d66ca00753a9ee4f3f5bed8754/26f103d66ca00753a9ee4f3f5bed8754.jpg',
+            title:'Shangri-La Frontier',
+            generes:["Hindi","Tamil"]
         },
         {
-            animePoster : 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-m1gX3iwfIsLu.png',
-            title:'Solo Leveling',
+            animePoster : 'https://img.flawlessfiles.com/_r/300x400/100/69/08/6908f85a069414d40530042f2cdd8c8a/6908f85a069414d40530042f2cdd8c8a.jpg',
+            title:'Dragon Ball Super',
             generes:["Hindi","Telugu","Tamil"]
         },
         {
-            animePoster : 'https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX380_CR0,4,380,562_.jpg',
-            title:'Jujutsu Kaisen',
+            animePoster : 'https://img.flawlessfiles.com/_r/300x400/100/8e/66/8e66cc3601ab396c90b1550ef39cfa7f/8e66cc3601ab396c90b1550ef39cfa7f.jpg',
+            title:'Darling in the FranXX',
             generes:["Hindi","Telugu","Tamil"]
         },
         {
-            animePoster : 'https://img.flawlessfiles.com/_r/300x400/100/f6/f0/f6f0a1657b0f119bb850fe3b1bbf81b5/f6f0a1657b0f119bb850fe3b1bbf81b5.jpg',
-            title:'That Time I Got Reincarnate...',
-            generes:["Telugu","Tamil"]
+            animePoster : 'https://img.flawlessfiles.com/_r/300x400/100/9c/c8/9cc864ccccce7f38f7a100627ef21516/9cc864ccccce7f38f7a100627ef21516.jpg',
+            title:'Vinland Saga Season2',
+            generes:["Hindi","Telugu","Tamil"]
         },
     ]
 
      return (
         <div className='mt-10'>
         <h2 className="text-[#FAA300] py-4 px-5 xl:px-12
-         font-bold flex items-center gap-2 text-xl md:text-3xl">Telugu Dubbed Animes</h2>
+         font-bold flex items-center gap-2 text-xl md:text-3xl">Tamil Dubbed Animes</h2>
 
         <div className='image-slider hidden lg:block'> 
         <Swiper
@@ -151,4 +151,4 @@ const TeluguDubbAnime = () =>{
 };
 
 
-export default TeluguDubbAnime;
+export default TamilDubbAnime;

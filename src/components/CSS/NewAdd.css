@@ -1,0 +1,55 @@
+.anime-bg-image {
+  height: 300px;
+  background: url(https://animerulz.pro/images/OnePieceLiveAction.jpg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position-x: -100px;
+  background-position-y: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.anime-bg-image2 {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://cdn.oneesports.gg/cdn-data/2023/08/OnePiece_LiveAction_Netflix_KeyVisual_Wallpaper_StrawHats.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: end;
+    gap: 1.1rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+@media (min-width: 1280px) {
+ 
+    .anime-bg-image {
+        height: 300px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://animerulz.pro/images/OnePieceLiveAction.jpg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position-x: -100px;
+        background-position-y: center;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      
+
+  .anime-bg-image2 {
+    width: 100%;
+    background: url(https://cdn.oneesports.gg/cdn-data/2023/08/OnePiece_LiveAction_Netflix_KeyVisual_Wallpaper_StrawHats.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+  }
+  .container{
+    gap: 1.5rem;
+  }
+}
