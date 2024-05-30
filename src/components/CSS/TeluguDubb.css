@@ -1,0 +1,39 @@
+.image-slider{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    position: relative;
+  }
+  
+  
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide  .img-container {
+    display: block;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    transition: all .3s linear;
+    border-radius: 10px;
+  }
+  
+  .swiper-slide img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: top;
+     transition: all .3s linear;
+     border-radius: 10px;
+  }

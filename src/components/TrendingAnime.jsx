@@ -2,7 +2,7 @@ import './CSS/Slider.css';
 
 
 import { FaFireAlt } from "react-icons/fa";
-
+import { MdNotStarted } from "react-icons/md";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -25,7 +25,7 @@ const TrendingAnime = () =>{
             tv: "T.V",
             ep:"7 episode",
             title:"Kaiju No.8",
-            gener:["Action","Adventure","Sci-Fi"],
+            genres:["Action","Adventure","Sci-Fi"],
             watchNow : "Watch Now"
         },
         {
@@ -34,7 +34,7 @@ const TrendingAnime = () =>{
             tv: "T.V",
             ep:"1106 episode",
             title:"ONE PIECE",
-            gener:["Action","Adventure","Comedy"],
+            genres:["Action","Adventure","Comedy"],
             watchNow : "Watch Now"
         },
         {
@@ -43,7 +43,7 @@ const TrendingAnime = () =>{
             tv: "T.V",
             ep:"3 episode",
             title:"Demonslayer:Kimetsu no Yaiba Hasira...",
-            gener:["Action","Adventure","Drama"],
+            genres:["Action","Adventure","Drama"],
             watchNow : "Watch Now"
         },
         {
@@ -52,7 +52,7 @@ const TrendingAnime = () =>{
             tv: "T.V",
             ep:"4 episode",
             title:"My Hero Academia Season 7",
-            gener:["Action","Adventure","Sci-Fi"],
+            genres:["Action","Adventure","Sci-Fi"],
             watchNow : "Watch Now"
         },
         {
@@ -61,7 +61,7 @@ const TrendingAnime = () =>{
             tv: "T.V",
             ep:"8 episode",
             title:"WIND BREAKER",
-            gener:["Action","Comedy","Drama"],
+            genres:["Action","Comedy","Drama"],
             watchNow : "Watch Now"
         },
         {
@@ -70,7 +70,7 @@ const TrendingAnime = () =>{
             tv: "T.V",
             ep:"12 episode",
             title:"Solo Leveling",
-            gener:["Action","Adventure","Fantasy"],
+            genres:["Action","Adventure","Fantasy"],
             watchNow : "Watch Now"
         },
         {
@@ -79,7 +79,7 @@ const TrendingAnime = () =>{
             tv: "T.V",
             ep:"9 episode",
             title:"Re:Monster",
-            gener:["Action","Adventure","Fantasy"],
+            genres:["Action","Adventure","Fantasy"],
             watchNow : "Watch Now"
         },
         {
@@ -88,7 +88,7 @@ const TrendingAnime = () =>{
             tv: "T.V",
             ep:"13 episode",
             title:"Ninja Kamui",
-            gener:["Action","Adventure","Drama"],
+            genres:["Action","Adventure","Drama"],
             watchNow : "Watch Now"
         },
         {
@@ -97,7 +97,7 @@ const TrendingAnime = () =>{
             tv: "T.V",
             ep:"7 episode",
             title:"Kaiju No.8",
-            gener:["Action","Adventure","Sci-Fi"],
+            genres:["Action","Adventure","Sci-Fi"],
             watchNow : "Watch Now"
         },
         {
@@ -106,7 +106,7 @@ const TrendingAnime = () =>{
             tv: "T.V",
             ep:"12 episode",
             title:"Blue Exorcist-Shimane Illuminati saga-",
-            gener:["Action","Comeedy","Fantasy"],
+            genres:["Action","Comeedy","Fantasy"],
             watchNow : "Watch Now"
         },
     ];
@@ -121,18 +121,26 @@ const TrendingAnime = () =>{
          bgBody.style.backgroundPosition = "center";
          bgBody.style.backgroundSize = "cover";
          bgBody.style.backdropFilter = "blur(10px)";
+         let animecontent = e.target.querySelectorAll(".anime-content");
+        animecontent.forEach(item=>{
+           item.style.display = "flex"
+        })
         
     };
 
     const mouseLeave = () =>{
         let bgBody =  document.body;
         bgBody.style.background = "black";
+        let animecontent = document.querySelectorAll(".anime-content");
+        animecontent.forEach(item=>{
+           item.style.display = "none"
+        })
     }
 
      return(
         <>
           <h2 className="text-[#FAA300] py-4 px-5 xl:px-12
-           font-bold flex items-center gap-2 text-xl md:text-3xl">Trending Anime <span><FaFireAlt /></span></h2>
+           font-bold flex items-center gap-2 text-xl md:text-3xl mt-6">Trending Anime <span><FaFireAlt /></span></h2>
 
           {/* Images div */}
           {/* large laptop */}
@@ -151,13 +159,33 @@ const TrendingAnime = () =>{
       >
         
         {TrendingAnimeImg.map(item=>{
-            return  <SwiperSlide onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}></SwiperSlide>
+            return <>
+            <SwiperSlide className='relative ' onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+            <div className='anime-content'>
+                <h4 className='border-b-[1px] border-b-black text-md font-semibold pb-2'>{item.nextEp}</h4>
+                <div className='flex  gap-2 items-center'>
+                   <p>{item.tv}</p>
+                   <div className='w-[8px] h-[8px] bg-[#000000d3]  rounded-full'></div>
+                   <p>{item.ep}</p>
+                </div>
+                <h3 className=' text-lg font-bold'>{item.title}</h3>
+                <div className='flex mt-2  gap-2 border-b-[1px] border-b-black pb-1'>
+                  {item.genres.map(elem=><p>{elem}</p>)}
+                </div>
+
+                <div className='inline-block mt-auto mx-auto'>
+                <button className="flex  items-center bg-[#fAA300] min-w-[80px] py-1 px-5 rounded-3xl gap-2 text-[#000000a6] font-bold cursor-pointer text-sm"><MdNotStarted className="text-black" />{item.watchNow}</button>
+
+                </div>
+             </div>
+            </SwiperSlide>
+            </> 
         })}
       </Swiper>
           </div>
 
         {/* medium laptop */}
-          <div className="slider-container hidden lg:block xl:hidden">
+          <div className="slider-container hidden lg:block xl:hidden px-10">
 
           <Swiper
         slidesPerView={5}
@@ -172,7 +200,27 @@ const TrendingAnime = () =>{
       >
         
         {TrendingAnimeImg.map(item=>{
-            return  <SwiperSlide onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}></SwiperSlide>
+            return <>
+            <SwiperSlide onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+            <div className='anime-content' style={{gap:"10px"}}>
+                <h4 className='border-b-[1px] border-b-black text-sm font-bold pb-2'>{item.nextEp}</h4>
+                <div className='flex  gap-2 text-sm items-center'>
+                   <p>{item.tv}</p>
+                   <div className='w-[8px] h-[8px] bg-[#000000d3]  rounded-full'></div>
+                   <p>{item.ep}</p>
+                </div>
+                <h3 className=' text-md font-bold'>{item.title}</h3>
+                <div className='flex mt-1 text-sm gap-2 border-b-[1px] border-b-black pb-1'>
+                  {item.genres.map(elem=><p>{elem}</p>)}
+                </div>
+
+                <div className='inline-block mt-auto mx-auto'>
+                <button className="flex  items-center bg-[#fAA300] min-w-[80px] py-1 px-5 rounded-3xl gap-2 text-[#000000a6] font-bold cursor-pointer text-sm"><MdNotStarted className="text-black" />{item.watchNow}</button>
+
+                </div>
+             </div>
+            </SwiperSlide>
+            </> 
         })}
       </Swiper>
           </div>
@@ -193,7 +241,27 @@ const TrendingAnime = () =>{
       >
         
         {TrendingAnimeImg.map(item=>{
-            return  <SwiperSlide onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}></SwiperSlide>
+          return <>
+           <SwiperSlide className='relative' onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+           <div className='anime-content'>
+                <h4 className='border-b-[1px] border-b-black text-md font-semibold pb-2'>{item.nextEp}</h4>
+                <div className='flex  gap-2 items-center'>
+                   <p>{item.tv}</p>
+                   <div className='w-[8px] h-[8px] bg-[#000000d3]  rounded-full'></div>
+                   <p>{item.ep}</p>
+                </div>
+                <h3 className=' text-lg font-bold'>{item.title}</h3>
+                <div className='flex mt-2 gap-2 border-b-[1px] border-b-black pb-1'>
+                  {item.genres.map(elem=><p>{elem}</p>)}
+                </div>
+
+                <div className='inline-block mt-auto mx-auto'>
+                <button className="flex  items-center bg-[#fAA300] min-w-[80px] py-1 px-5 rounded-3xl gap-2 text-[#000000a6] font-bold cursor-pointer text-sm"><MdNotStarted className="text-black" />{item.watchNow}</button>
+
+                </div>
+             </div>
+           </SwiperSlide>
+          </> 
         })}
       </Swiper>
           </div>
@@ -210,11 +278,16 @@ const TrendingAnime = () =>{
         }}
         modules={[FreeMode]}
         className="mySwiper"
-        style={{height:"26vh"}}
+        style={{height:"25vh"}}
       >
         
         {TrendingAnimeImg.map(item=>{
-            return  <SwiperSlide className='backgroudImages' style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}></SwiperSlide>
+            return  <>
+            <SwiperSlide className='backgroudImages relative' style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+             
+            </SwiperSlide>
+            
+            </>
         })}
       </Swiper>
           </div>
