@@ -1,0 +1,22 @@
+
+.footer{
+    z-index: 999;
+    position: relative;
+}
+
+
+.footer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 1800px;
+    height: 100%;
+    transform: rotateY(180deg);
+    background: url(https://animerulz.pro/images/zorosleeping.png) no-repeat;
+    background-size: auto 90%;
+    background-position: left bottom;
+    filter: grayscale(90%);
+    bottom: 0;
+    z-index: 0;
+}
+

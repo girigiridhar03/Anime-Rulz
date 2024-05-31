@@ -243,6 +243,7 @@ const TrendingAnime = () =>{
         {TrendingAnimeImg.map(item=>{
           return <>
            <SwiperSlide key={item.animeimg} className='relative' onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+            <div className="overlay1">
            <div className='anime-content'>
                 <h4 className='border-b-[1px] border-b-black text-md font-semibold pb-2'>{item.nextEp}</h4>
                 <div className='flex  gap-2 items-center'>
@@ -260,6 +261,7 @@ const TrendingAnime = () =>{
 
                 </div>
              </div>
+            </div>
            </SwiperSlide>
           </> 
         })}
@@ -284,7 +286,7 @@ const TrendingAnime = () =>{
         {TrendingAnimeImg.map(item=>{
             return  <>
             <SwiperSlide key={item.animeimg} className='backgroudImages relative' style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
-             
+              <div className="overlay1"></div>
             </SwiperSlide>
             
             </>

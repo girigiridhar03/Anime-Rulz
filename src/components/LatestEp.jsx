@@ -160,6 +160,7 @@ const LastestEp = () =>{
         {LastestEp.map(item=>{
             return <>
             <SwiperSlide className='relative ' onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+             
             <div className='anime-content'>
                 <h4 className='border-b-[1px] border-b-black text-md font-semibold pb-2'>{item.nextEp}</h4>
                 <div className='flex  gap-2 items-center'>
@@ -177,6 +178,7 @@ const LastestEp = () =>{
 
                 </div>
              </div>
+          
             </SwiperSlide>
             </> 
         })}
@@ -242,6 +244,7 @@ const LastestEp = () =>{
         {LastestEp.map(item=>{
           return <>
            <SwiperSlide className='relative' onMouseEnter={mouseHover} onMouseLeave={mouseLeave} style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
+           <div className='overlay1'>
            <div className='anime-content'>
                 <h4 className='border-b-[1px] border-b-black text-md font-semibold pb-2'>{item.nextEp}</h4>
                 <div className='flex  gap-2 items-center'>
@@ -259,6 +262,7 @@ const LastestEp = () =>{
 
                 </div>
              </div>
+           </div>
            </SwiperSlide>
           </> 
         })}
@@ -283,7 +287,8 @@ const LastestEp = () =>{
         {LastestEp.map(item=>{
             return  <>
             <SwiperSlide className='backgroudImages relative' style={{background : `url(${item.animeimg})`,backgroundRepeat:'no-repeat',backgroundPosition:'center',width:'20%' ,height: " 100%" ,backgroundSize:"cover"}}>
-             
+            <div className='overlay1 text-[#ffffff9d]'>
+            </div>
             </SwiperSlide>
             
             </>
