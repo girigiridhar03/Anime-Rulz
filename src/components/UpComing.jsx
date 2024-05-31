@@ -52,7 +52,7 @@ const UpComing = ()=>{
             <div className="w-100% md:w-[80%]">
             <h2 className="text-[#FAA300] py-4 
            font-bold flex items-center gap-2 text-xl md:text-3xl mt-6">UpComing Anime</h2>
-              <div className="flex flex-wrap gap-5 w-[100%]">
+              <div className="flex flex-wrap gap-4 w-[100%]">
              {UpcomingAnimeImg.map(item=> <AnimeCards data={item} />)}
               </div>
             </div>
