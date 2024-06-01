@@ -26,6 +26,13 @@
     gap: 1.1rem;
     padding-inline: 1rem;
 }
+
+@media (min-width:375px) {
+  .container{
+    height: 65%;
+  }
+}
+
 @media (min-width: 1280px) {
  
     .anime-bg-image {
@@ -52,3 +59,4 @@
     gap: 1.5rem;
   }
 }
+

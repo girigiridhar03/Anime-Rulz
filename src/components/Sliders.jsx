@@ -123,18 +123,18 @@ const Sliders = () =>{
               <div className='flex items-center gap-1'>
              
               <div className='bg-[#ffffffd8] w-[6px] h-[6px] rounded-full'></div>
-              <span className='text-[#ffffffc0] font-bold text-sm'>{item.serie}</span>
+              <span className='text-[#ffffffc0] font-bold text-[10px] sm:text-sm'>{item.serie}</span>
                
                
               <div className='bg-[#ffffffd8] w-[6px] h-[6px] rounded-full'></div>
-              <span className='text-[#ffffffc0] font-bold text-sm'>{item.time}</span>
+              <span className='text-[#ffffffc0] font-bold text-[10px] sm:text-sm'>{item.time}</span>
                 
               </div>
               <div className="text-[#ffffffc0] flex items-center gap-2">
-                 <button className="flex items-center bg-[#fAA300] min-w-[80px] py-1 px-5 rounded-3xl gap-2 text-[#000000a6] font-bold cursor-pointer text-sm"><MdNotStarted className="text-black" />{item.watchButton}</button>
-                 <button className="flex items-center bg-[#D6D2D0] min-w-[80px] py-1 px-5 rounded-3xl gap-2 text-[#000000a6] font-bold cursor-pointer text-sm">{item.detailsButton}</button>
+                 <button className="flex items-center bg-[#fAA300] min-w-[80px] py-1 px-5 rounded-3xl gap-2 text-[#000000a6] font-bold cursor-pointer text-[12px] sm:text-sm"><MdNotStarted className="text-black" />{item.watchButton}</button>
+                 <button className="flex items-center bg-[#D6D2D0] min-w-[80px] py-1 px-5 rounded-3xl gap-2 text-[#000000a6] font-bold cursor-pointer text-[12px] sm:text-sm">{item.detailsButton}</button>
               </div>
-              <div className="text-[#ffffffa9] flex items-center gap-1 text-[.8rem]">
+              <div className="text-[#ffffffa9] flex items-center gap-1 text-[10px] sm:text-[.8rem]">
               <FaClock />
               <p className=" font-bold">{item.updateTime}</p>
               </div>
